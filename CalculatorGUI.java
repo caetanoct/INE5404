@@ -1,3 +1,6 @@
+
+package asdsafdsa;
+
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
@@ -154,7 +157,14 @@ public class CalculatorGUI extends JFrame {
 				}
 			}
 			if(event.getSource() == buttons[13]){
-				text.setText(textoAnterior+=".");
+				if(text.getText().indexOf('.') >= 0) {
+					System.out.println("Já existe um '.' na string");
+				}
+				else
+				{
+					text.setText(textoAnterior+=".");
+				}
+				
 			}
 			if(event.getSource() == buttons[14]){
 				double valor1 = Double.parseDouble(stringAntesOp);
