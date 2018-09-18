@@ -111,7 +111,7 @@ public class PrinterGUI extends JFrame {
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		frame.setSize(400, 200);
+		frame.setSize(600, 200);
 
 		frame.setVisible(true);
 
